@@ -1,0 +1,22 @@
+{
+  "name": "portfolionadine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niiins/my-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niiins/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/Niiins/my-portfolio#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
