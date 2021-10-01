@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/audioProject.css">
     <title>Nadine Batteoui</title>
 </head>
     <body>
@@ -13,10 +14,15 @@
             <h1>Nadine Batteoui</h1>
         </header>
         <main>
-            <h1>Film Audio C4CHE_C4CHE</h1>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IqIX7FuK_e8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Film Audio C4CHE_C4CHE</h2>
+            <div class="video-container">
+                <iframe width="960" height="615" src="https://www.youtube.com/embed/IqIX7FuK_e8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <span>Rôle : Designer, monteur vidéo</span>
             </div>
+            <button>Retour</button>
         </main>
     </body>
+    <script>
+        document.querySelector("button").addEventListener("click", ()=>{document.location.href="../"});
+    </script>
 </html>

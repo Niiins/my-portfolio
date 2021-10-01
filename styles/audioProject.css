@@ -1,0 +1,38 @@
+header{
+    margin-bottom: 3%;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container iframe{
+    margin-bottom: 10px;
+}
+
+button{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #191919;
+    color: white;
+}
+
+
+
