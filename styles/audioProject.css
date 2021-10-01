@@ -16,3 +16,14 @@ h2{
 .video-container iframe{
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 480px){
+    iframe{
+        width: 300px;
+        height: 250px;
+    }
+
+    h2{
+        text-align: center;
+    }
+}
