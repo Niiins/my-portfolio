@@ -1,3 +1,8 @@
-const baseURL = "https://niiins.github.io/my-portfolio/";
+const dessinsCard = document.querySelector("#dessins");
+const audioProjectCard = document.querySelector("#audio-project");
 
-export { baseURL };
+audioProjectCard.addEventListener("click", () => {document.location.href = `./pages/audioProject.html`})
+
+dessinsCard.addEventListener("click", () => {
+document.location.href = `./pages/dessins.html`;
+});
