@@ -49,7 +49,7 @@ main{
 .card img{
     height: 80%;
     width: 100%;
-    background-color: lightblue;
+    background-color: #212121;
     object-fit: cover;
 }
 
