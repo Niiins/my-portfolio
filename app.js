@@ -4,6 +4,15 @@ const newsletterCard = document.querySelector("#newsletter");
 const moiPresidentCard = document.querySelector("#moi-president");
 const darkKnightCard = document.querySelector("#dark-knight");
 const bedNightCard = document.querySelector("#bed-night");
+const coronaCard = document.querySelector("#corona");
+const combineImagesCard = document.querySelector("#combiner-images");
+const universLucasCard = document.querySelector("#univers-lucas");
+const magazineCard = document.querySelector("#magazine");
+const robeGiraffeCard = document.querySelector("#robe-giraffe");
+const tabascoCard = document.querySelector("#tabasco");
+const urbanTranceCard = document.querySelector("#urban-trance");
+const spaceTypo = document.querySelector("#best-typo");
+const spacePres = document.querySelector("#best-pres");
 
 audioProjectCard.addEventListener("click", () => {document.location.href = `./pages/audioProject.html`});
 //dessinsCard.addEventListener("click", () => {document.location.href = `./pages/dessins.html`});
@@ -11,5 +20,12 @@ newsletterCard.addEventListener("click", () => {document.location.href = `./page
 moiPresidentCard.addEventListener("click", () => {document.location.href = `./pages/moiPresident.html`});
 darkKnightCard.addEventListener("click", () => {document.location.href = `./pages/darkKnight.html`});
 bedNightCard.addEventListener("click", () => {document.location.href = `./pages/bedNight.html`});
-
-
+coronaCard.addEventListener("click", () => {document.location.href = "./pages/datavizCoronavirus.html"});
+combineImagesCard.addEventListener("click", () => {document.location.href = "./pages/combinerImages.html"});
+universLucasCard.addEventListener("click", () => {document.location.href = "./pages/universLucas.html"});
+magazineCard.addEventListener("click", () => {document.location.href = "./pages/magazine.html"});
+robeGiraffeCard.addEventListener("click", () => {document.location.href = "./pages/robeGiraffe.html"});
+tabascoCard.addEventListener("click", () => {document.location.href = "./pages/tabasco.html"});
+urbanTranceCard.addEventListener("click", () => {document.location.href = "./pages/urbanTrance.html"});
+spaceTypo.addEventListener("click", () => {document.location.href = "./pages/codeSpaceTypo.html"});
+spacePres.addEventListener("click", () => {document.location.href = "./pages/codeSpacePres.html"});

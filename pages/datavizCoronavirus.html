@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="stylesheet" href="../style.css">
+    <title>Nadine Batteoui</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .moodboard{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+        .moodboard2{
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .dataviz{
+            width: 50%;
+            margin-bottom: 50px;
+        }
+
+        .dataviz-enfant{
+            width: 40%;
+            margin: 20px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Nadine Batteoui</h1>
+        </header>
+        <main>
+            <div>
+                <h2>Datavisualisation - Coronavirus</h2>
+                <h3>Logiciel utilisé : Illustrator</h3>
+                <div class="container">
+                    <h4>Moodboard</h4>
+                    <img class="moodboard" src="../images/dataviz/Moodboard.PNG" alt="">
+                    <img class="moodboard2" src="../images/dataviz/Moodboard2.png" alt="">
+                    <img class="dataviz" src="../images/dataviz/dataviz.PNG" alt="">
+                </div>
+                <h2>Datavisualisation - Coronavirus pour les enfants</h2>
+                <h3>Logiciel utilisé : Illustrator</h3>
+                <div class="container">
+                    <embed src="../images/dataviz/Présentation.pdf" width="960" height="515" 
+                    type="application/pdf">
+                    <img class="dataviz-enfant" src="../images/dataviz/dataviz-enfant.png" alt="">
+                </div>
+            </div>
+            <button>Retour</button>
+        </main>
+        <script>
+            document.querySelector("button").addEventListener("click", ()=>{document.location.href="../"});
+        </script>
+    </body>
+</html>

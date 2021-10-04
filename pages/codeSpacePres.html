@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="stylesheet" href="../style.css">
+    <title>Nadine Batteoui</title>
+    <style>
+        .banner{
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .logo{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .affiche{
+            width: 50%;
+            margin-right: 20px;
+            margin-bottom: 50px;
+        }
+
+        .flyer{
+            width: 45%;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>Nadine Batteoui</h1>
+        </header>
+        <main>
+            <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <h2>Code Space Company - Bannière, Affiche et Présentation</h2>
+                <img class="banner" src="../images/code-space-company/banniere.png" alt="">
+                <img class="logo" src="../images/code-space-company/logo.png" alt="">
+                <div style="display: flex; flex-direction: row; justify-content: space-between; width: 70%">
+                    <img class="affiche" src="../images/code-space-company/affiche.png" alt="">
+                    <img class="flyer" src="../images/code-space-company/flyer.png" alt="">
+                </div>
+                <embed src="../images/code-space-company/pres.pdf" width="960" height="915" 
+                type="application/pdf">
+            </div>
+            <button>Retour</button>
+        </main>
+        <script>
+            document.querySelector("button").addEventListener("click", ()=>{document.location.href="../"});
+        </script>
+    </body>
+</html>
