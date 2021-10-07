@@ -31,6 +31,10 @@ main{
     align-items: center;
 }
 
+a, a:link, a:visited{
+    color: white;
+}
+
 section{
     width: 100%;
     display: flex;
@@ -42,13 +46,19 @@ h2{
     margin: 5% 0;
 }
 
-h3, h4{
+h3{
     margin-bottom: 30px;
+}
+
+h4{
+    margin-bottom: 80px;
 }
 
 h2, h3{
     text-align: center;
 }
+
+
 
 .pres-text{
     width: 70%;
