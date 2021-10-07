@@ -7,18 +7,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="stylesheet" href="../style.css">
     <title>Nadine Batteoui</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .icon{
+            width: 30%;
+            background-color: white;
+        }
+
+        .affiche{
+            width: 30%;
+        }
+    </style>
 </head>
     <body>
         <header>
             <h1>Nadine Batteoui</h1>
         </header>
         <main>
-            <div>
-                <div class="card">
-                    <img src="../images/dessin1.jpg" alt="">
-                    <div>
-                        <p>Dessins papier</p>
-                    </div>
+            <div class="container">
+                <h2>L'Univers de Lucas</h2>
+                <h3>Logiciel Utilisé : Illustrator</h3>
+                <div class="icon-container">
+                    <img class="icon" src="../images/univers-lucas/Lucas Bleuu.png" alt="">
+                    <img class="icon" src="../images/univers-lucas/Lucas rosee.png" alt="">
+                    <img class="icon" src="../images/univers-lucas/Welcome_ST_Tropez.png" alt="">
+                    <img class="affiche" src="../images/univers-lucas/L_univers de Lucas 1.png" alt="">
+                    <img class="affiche" src="../images/univers-lucas/L_univers de Lucas 2.png" alt="">
                 </div>
             </div>
             <button>Retour</button>
