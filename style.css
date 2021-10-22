@@ -114,7 +114,7 @@ h2, h3, h4{
     object-fit: unset !important;
 }
 
-button{
+#button{
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -126,7 +126,7 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+#button:hover{
     background-color: #191919;
     color: white;
 }
@@ -136,7 +136,7 @@ button:hover{
         height: 300px;
     }
 
-    button{
+    #button{
         position: inherit;
         margin: 5% 0;
     }
