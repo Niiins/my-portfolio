@@ -42,6 +42,24 @@
             font-size: 1.2rem;
             margin: 40px;
         }
+
+        @media screen and (max-width: 400px) {
+            .moodboard{
+                width: 90%;
+            }
+
+            .moodboard2{
+                width: 80%;
+            }
+
+            .dataviz{
+                width: 90%;
+            }
+
+            .dataviz-enfant{
+                width: 80%;
+            }
+        }
     </style>
 </head>
     <body>
@@ -63,15 +81,28 @@
                 <h2>Datavisualisation - Coronavirus expliqué aux enfants</h2>
                 <h3>Logiciel utilisé : Illustrator</h3>
                 <div class="container">
-                    <embed src="../images/dataviz/Présentation.pdf" width="1260" height="615" 
-                    type="application/pdf">
+                    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                <div class="pdf-btn-container">
+                  <button id="prev"><<</button>
+                  <button id="next">>></button>
+                </div>
+                <canvas id="the-canvas">
+                </canvas>
                     <img class="dataviz-enfant" src="../images/dataviz/dataviz-enfant.png" alt="">
                 </div>
             </div>
-            <button>Retour</button>
+            <button id="button">Retour</button>
         </main>
         <script>
-            document.querySelector("button").addEventListener("click", ()=>{document.location.href="../"});
+            document.querySelector("#button").addEventListener("click", ()=>{document.location.href="../"});
         </script>
+        <script src="../pdfjs/pdf.js"></script>
+        <script src="../pdfjs/pdf.worker.js"></script>
+        <script src="../pdfjs/pdf.sandbox.js"></script>
+        <script>
+            const typoPres = pdfjsLib.getDocument('../images/dataviz/Présentation.pdf');
+            var url = '../images/dataviz/Présentation.pdf';
+        </script>
+        <script src="../pdfSetup.js"></script>
     </body>
 </html>

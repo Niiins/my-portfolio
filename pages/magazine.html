@@ -30,6 +30,17 @@
         h3{
             margin: 40px;
         }
+
+        @media screen and (max-width: 400px) {
+            .cover{
+                flex-direction: column;
+            }
+
+            .cover img{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
     <body>
@@ -40,8 +51,13 @@
             <div class="container">
                 <h2>Magazine CREEPY</h2>
                 <h3>Logiciel utilisé : inDesign</h3>
-                <embed src="../images/magazine.pdf" width="960" height="915" 
-                type="application/pdf">
+                <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                <div class="pdf-btn-container">
+                  <button id="prev"><<</button>
+                  <button id="next">>></button>
+                </div>
+                <canvas id="the-canvas">
+                </canvas>
                 <h3>Déclinaisons de Couvertures</h3>
                 <div class="cover">
                     <img src="../images/magazine/page1.png" alt="">
@@ -49,10 +65,18 @@
                     <img src="../images/magazine/page3.png" alt="">
                 </div>
             </div>
-            <button>Retour</button>
+            <button id="button">Retour</button>
         </main>
         <script>
-            document.querySelector("button").addEventListener("click", ()=>{document.location.href="../"});
+            document.querySelector("#button").addEventListener("click", ()=>{document.location.href="../"});
         </script>
+        <script src="../pdfjs/pdf.js"></script>
+        <script src="../pdfjs/pdf.worker.js"></script>
+        <script src="../pdfjs/pdf.sandbox.js"></script>
+        <script>
+            const typoPres = pdfjsLib.getDocument('../images/magazine.pdf');
+            var url = '../images/magazine.pdf';
+        </script>
+        <script src="../pdfSetup.js"></script>
     </body>
 </html>

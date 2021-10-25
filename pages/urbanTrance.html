@@ -25,6 +25,16 @@
         .affiche{
             width: 40%
         }
+
+        @media screen and (max-width: 400px) {
+            .banniere{
+                width: 90%;
+            }
+
+            .affiche{
+                width: 80%;
+            }
+        }
     </style>
 </head>
     <body>
@@ -37,13 +47,26 @@
                 <h3>Logiciels utilisés : Photoshop, Illustrator</h3>
                 <img class="banniere" src="../images/urban-trance/banniere.png" alt="">
                 <img class="affiche" src="../images/urban-trance/affiche.png" alt="">
-                <embed src="../images/urban-trance/pres.pdf" width="960" height="915" 
-                type="application/pdf">
+                <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                <div class="pdf-btn-container">
+                  <button id="prev"><<</button>
+                  <button id="next">>></button>
+                </div>
+                <canvas id="the-canvas">
+                </canvas>
             </div>
-            <button>Retour</button>
+            <button id="button">Retour</button>
         </main>
         <script>
-            document.querySelector("button").addEventListener("click", ()=>{document.location.href="../"});
+            document.querySelector("#button").addEventListener("click", ()=>{document.location.href="../"});
         </script>
+        <script src="../pdfjs/pdf.js"></script>
+        <script src="../pdfjs/pdf.worker.js"></script>
+        <script src="../pdfjs/pdf.sandbox.js"></script>
+        <script>
+            const typoPres = pdfjsLib.getDocument('../images/urban-trance/pres.pdf');
+            var url = '../images/urban-trance/pres.pdf';
+        </script>
+        <script src="../pdfSetup.js"></script>
     </body>
 </html>

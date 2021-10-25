@@ -23,6 +23,13 @@
             width: 100%;
         }
 
+        .affiche-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
         .icon{
             width: 30%;
             background-color: white;
@@ -30,6 +37,16 @@
 
         .affiche{
             width: 30%;
+        }
+
+        @media screen and (max-width: 400px) {
+            .icon{
+                width: 50%;
+            }
+
+            .affiche{
+                width: 80%;
+            }
         }
     </style>
 </head>
@@ -46,14 +63,16 @@
                     <img class="icon" src="../images/univers-lucas/Lucas Bleuu.png" alt="">
                     <img class="icon" src="../images/univers-lucas/Lucas rosee.png" alt="">
                     <img class="icon" src="../images/univers-lucas/Welcome_ST_Tropez.png" alt="">
+                </div>
+                <div class="affiche-container">
                     <img class="affiche" src="../images/univers-lucas/L_univers de Lucas 1.png" alt="">
                     <img class="affiche" src="../images/univers-lucas/L_univers de Lucas 2.png" alt="">
                 </div>
             </div>
-            <button>Retour</button>
+            <button id="button">Retour</button>
         </main>
         <script>
-            document.querySelector("button").addEventListener("click", ()=>{document.location.href="../"});
+            document.querySelector("#button").addEventListener("click", ()=>{document.location.href="../"});
         </script>
     </body>
 </html>
